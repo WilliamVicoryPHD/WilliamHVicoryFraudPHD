@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -127,9 +128,9 @@
 
     /* Layout Components */
     .container {
-      max-width: 1200px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 2rem 1rem;
     }
 
     .header {
@@ -401,8 +402,13 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     .modal-content {
@@ -420,11 +426,12 @@
     }
 
     @keyframes zoomIn {
-      from { 
+      from {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.8);
       }
-      to { 
+
+      to {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
       }
@@ -461,38 +468,38 @@
       .container {
         padding: 0 1rem;
       }
-      
+
       .image-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .image-flex {
         flex-direction: column;
         align-items: center;
       }
-      
+
       .image-flex img {
         width: 100%;
         max-width: 350px;
       }
-      
+
       .image-comparison {
         grid-template-columns: 1fr;
       }
-      
+
       .comparison-item img {
         height: 250px;
       }
-      
+
       .image-scroll img {
         height: 200px;
       }
-      
+
       .modal-content {
         max-width: 95%;
         max-height: 95%;
       }
-      
+
       .close {
         top: 15px;
         right: 20px;
@@ -506,11 +513,11 @@
       html {
         font-size: 14px;
       }
-      
+
       .card {
         padding: 1.5rem;
       }
-      
+
       .image-scroll img {
         height: 180px;
       }
@@ -522,6 +529,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -532,11 +540,25 @@
       animation: slideInUp 0.6s ease forwards;
     }
 
-    .card:nth-child(1) { animation-delay: 0.1s; }
-    .card:nth-child(2) { animation-delay: 0.2s; }
-    .card:nth-child(3) { animation-delay: 0.3s; }
-    .card:nth-child(4) { animation-delay: 0.4s; }
-    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .card:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .card:nth-child(5) {
+      animation-delay: 0.5s;
+    }
 
     /* Enhanced Section Styling */
     .section-header {
@@ -675,13 +697,13 @@
       .evidence-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      
+
       .card-header {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
       }
-      
+
       .warning-box {
         flex-direction: column;
         text-align: center;
@@ -832,13 +854,13 @@
       .scheme-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .scheme-header {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
       }
-      
+
       .scheme-icon {
         width: 60px;
         height: 60px;
@@ -847,6 +869,7 @@
     }
   </style>
 </head>
+
 <body>
   <header class="header">
     <div class="header-content">
@@ -860,265 +883,313 @@
     <main class="main-content">
       <section class="section">
         <div class="card evidence-card">
-      <p>You’ve asked me to call you “dad” for years. But real fathers don’t betray, lie, manipulate, and rot their families from the inside while playing cowboy coffee roaster on Instagram.</p>
-      <p>This is your intervention — and your exposure. I hope it hurts, because the truth should.</p>
-      <p>The scams you’ve been running from every time you started another failed business, made another fake claim, or lied about who you are.</p>
-      <p><strong>You are not a doctor.</strong><br>
-      You are not a medical professional.<br>
-      You are not a business owner.<br>
-      You are not a husband.<br>
-      You are not a man of integrity.<br>
-      You are a fraud, a cheater, and a danger to anyone who believes the lies you keep posting online.</p>
-    </div>
-
-    <h2>Let’s start with your so-called “credentials.”</h2>
-<div class="box">
-  <p>You go by “William H. Vicory PhD CP” on social media like it’s a badge of honor. But let’s be clear: You do not have a PhD.</p>
-  <div class="tag-list">
-    <span class="tag">No Transcripts</span>
-    <span class="tag">No Institution</span>
-    <span class="tag">No Verifiable Degree</span>
-    <span class="tag">No Academic Record</span>
-  </div>
-</div>
-      <p style="margin: 1.5rem 0; font-weight: bold; color: #e50914; text-align: center;">Here's proof of his fake PhD claims:</p>
-      <div class="image-grid">
-        <img src="assets/pics/phdFakes/phd1.png" alt="Fake PhD claim 1">
-        <img src="assets/pics/phdFakes/phd2.jpg" alt="Fake PhD claim 2">
-        <img src="assets/pics/phdFakes/phd3.png" alt="Fake PhD claim 3">
-        <img src="assets/pics/phdFakes/phd4.png" alt="Fake PhD claim 4">
-        <img src="assets/pics/phdFakes/phd5.png" alt="Additional fake PhD evidence">
-      </div>
-      <p>You add “PhD” to your usernames — like on your Instagram medspa page — in an effort to fool others and feed your ego. You once even tweeted about Jill Biden’s doctorate while flexing your own fake one. That’s <strong>stolen academic valor</strong>, and it’s disgraceful.</p>
-      <br><p>And what about this “Certified Botox Injector” claim? You’ve spent thousands of dollars chasing half-certifications under sketchy, non-accredited programs so you can pretend to be a cosmetic injector — even though you’re nearly 80 years old and have Parkinson’s disease, which literally affects your ability to hold a syringe.</p>
-      <br><p>You’re advertising Botox treatments on your Instagram page (<a href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a>), trying to sell services you’re <strong>not licensed</strong> or <strong>qualified</strong> to perform. You claim to serve San Antonio, Austin, and South Central Texas, and even promote boudoir photo shoots. 🤮🤮🤮 But your only photo on that account is a dim selfie of you half-asleep in glasses. Nobody is coming to your house for medical-grade facial injections. That’s not just embarrassing. It’s criminal negligence.</p>
-      <div class="single-image">
-        <img src="assets/pics/SwankBill.png" alt="Bill's Instagram medspa page">
-      </div>
-    </div>
-
-    <h2>But the lies don’t stop there. They never have.</h2>
-    <div class="box">
-
-      <div class="tag-heading"><span class="tag">Trail Ride Coffee</span></div>
-      <p>You bragged about creating your own "brand" of artisanal coffee... you never sold a single bean. Using stock photos from the internet, even false quotes from your own family members.... You have two different sites - god only knows how much you spent to have them build, and the monthly charges to keep them online while you sell NOTHING</p>
-      <p>Here are the actual sites: 
-        <a href="https://trailridecoffee.coffee/" target="_blank">trailridecoffee.coffee</a> and 
-        <a href="https://www.trailridecoffee.com/" target="_blank">trailridecoffee.com</a>
-      </p>
-      <div class="image-flex">
-        <img src="assets/pics/trail-ride-coffee-1.png" alt="Trail Ride Coffee 1">
-        <img src="assets/pics/trail-ride-coffee-2.png" alt="Trail Ride Coffee 2">
-      </div>
-    
-      <div class="tag-heading"><span class="tag">Level IV Body Armor MLM</span></div>
-      <p>You advertised ballistic vests and plates... just another MLM scheme you fell for.</p>
-      <div class="image-flex">
-        <img src="assets/pics/bodyarmor.png" alt="Armor 1">
-        <img src="assets/pics/bodyarmour2.png" alt="Armor 2">
-      </div>
-    
-      <div class="tag-heading"><span class="tag">Swank Esthetics / Hawaiian Medspa</span></div>
-      <p>Another ego project with fake certifications, stolen logo photos, and no clients. You wasted thousands on supplies and equipment to run this fake business.</p>
-      <div class="image-comparison">
-        <div class="comparison-item">
-          <div class="comparison-label">Bill's Stolen Version</div>
-          <img src="assets/pics/SwankBill.png" alt="Bill's fake logo">
+          <p>You’ve asked me to call you “dad” for years. But real fathers don’t betray, lie, manipulate, and rot their
+            families from the inside while playing cowboy coffee roaster on Instagram.</p>
+          <p>This is your intervention — and your exposure. I hope it hurts, because the truth should.</p>
+          <p>The scams you’ve been running from every time you started another failed business, made another fake claim,
+            or lied about who you are.</p>
+          <p><strong>You are not a doctor.</strong><br>
+            You are not a medical professional.<br>
+            You are not a business owner.<br>
+            You are not a husband.<br>
+            You are not a man of integrity.<br>
+            You are a fraud, a cheater, and a danger to anyone who believes the lies you keep posting online.</p>
         </div>
-        <div class="comparison-item">
-          <div class="comparison-label">Original Business Logo</div>
-          <img src="assets/pics/stolenlogo.png" alt="Real logo">
-        </div>
-      </div>
-      <p><a href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a></p><br><br>
-    
-      <div class="tag-heading"><span class="tag">Mushroom King Delusion</span></div>
-      <p>You tried to rebrand as a psychedelic healer — posting mushroom chocolates and tinctures like you were running a legit biz. In reality, it was all just a kitchen photoshoot with no license, no fulfillment, and not a single customer.</p>
-      <div class="image-flex">
-        <img src="assets/pics/Mushroom King/mush1.jpg" alt="Mushroom 1">
-        <img src="assets/pics/Mushroom King/mush2.jpg" alt="Mushroom 2">
-        <img src="assets/pics/Mushroom King/mush3.jpg" alt="Mushroom 3">
-      </div>
-    
-    </div>
-      
-      <p>You don’t actually sell products. You just post fake branding to feel important. You’re not an entrepreneur. You’re a serial pretender.</p>
-    </div>
 
-    <div class="tag-heading"><span class="tag">The damage to your wife</span></div>
-    <div class="box">
-      <p>You have financially abused her for years. She’s stuck in a house that’s literally falling apart while you throw away money on phony certifications and online scams. The chimney is rotting. The bathroom is broken. She works harder than you ever have around the house. She needs dental surgery and has no teeth— but you’d rather send money to Nigerian catfish scammers than take care of her.</p>
-      <p>You can’t afford basic living costs because you’re too busy playing make-believe doctor online.</p>
-      <div class="single-image">
-        <img src="assets/pics/rotting_chimey.png" alt="Chimney photo">
-      </div>
-    </div>
-
-    <div class="tag-heading"><span class="tag">Disturbing online behavior</span></div>
-    <div class="box">
-      <p>You flirt with catfish and cam girls. You’ve been caught sending money to scammers posing as women, calling them your “babies.” You once paid <strong>$50 at 6:04 a.m.</strong> to “WILLIAM VICORY OMO MARY AKA BILL.”</p>
-      <p><strong>“Omo Mary” is a known alias used by Nigerian scammers.</strong></p>
-      <div class="single-image">
-        <img src="assets/pics/maryOMO.png" alt="Payment screenshot to Omo Mary aka Bill">
-      </div>
-    </div>
-
-    <div class="tag-heading"><span class="tag">The BDSM Contract</span></div>
-    <div class="box">
-      <p>You signed a BDSM “Sissy Cumslut” contract with full name, address, fake occupation, and blood type. You shared it publicly. That’s humiliating — and you treated it like part of your “brand.”</p>
-      <div class="image-flex">
-        <img src="assets/pics/bdsm/photo_2025-08-07_15-42-47.jpg" alt="BDSM Contract Screenshot 1">
-        <img src="assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg" alt="BDSM Contract Screenshot 2">
-      </div>
-    </div>
-
-    <div class="tag-heading"><span class="tag">More deceit and damage</span></div>
-    <div class="box">
-      <li><strong>Canon EOS RP Camera Scheme:</strong> One of the most disgusting examples of financial waste — you paid nearly <strong>$4,079.76</strong> for a camera that retails for <strong>$1,100 less</strong> online. Why? Because you used a business credit card through Aaron's Rent-To-Own — racking up $1,684.77 in lease fees on a camera you don't even use. Meanwhile, Oma can't eat solid food because you won’t help pay for her dental work.
-
-        <div class="image-flex">
-          <img src="assets/pics/camera/photo_2025-08-07_15-47-15.jpg" alt="Camera evidence 1">
-          <img src="assets/pics/camera/photo_2025-08-07_15-47-17.jpg" alt="Camera evidence 2">
-          <img src="assets/pics/camera/photo_2025-08-07_15-47-18.jpg" alt="Camera evidence 3">
-        </div>
-      
-        <p>This wasn’t an investment — it was a vanity prop. Another high-interest scam paid through a sketchy business account while your own wife's teeth are rotting in her mouth. You’re not a photographer. You’re not a content creator. You’re a leech with expensive toys and no income.</p>
-
-        <div class="tag-heading"><span class="tag">Endless Porn Addiction & Predatory Obsession</span></div>
+        <h2>Let’s start with your so-called “credentials.”</h2>
         <div class="box">
-          <p>It’s impossible to capture the full extent of your horniness — there are <strong>thousands of screenshots</strong> showing your nonstop thirst.</p>
-          <p>You spam comments on photos of women half your age (and younger), from Threads to Facebook to Instagram. You reply to strangers saying “nobody wants me” with “I do” — like some sad, creepy NPC hoping to get lucky in the replies.</p>
-          <p>You publicly beg cam girls for attention, praise random selfies with “🔥pretty❤️,” and hang out in “Open Relationship” groups hitting “like” on every woman’s mirror selfie. You even brag in the comments about having “had all” types of sex, as if anyone asked.</p>
-        
-          <div class="image-scroll">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-43-06.jpg" alt="William replying to cam girl">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-43-09.jpg" alt="Thirst reply 'I do'">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-43-15.jpg" alt="Open relationship post like">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-43-17.jpg" alt="Sex brag comment">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-47-08.jpg" alt="Instagram 'pretty' comment">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-47-09.jpg" alt="Threads post liking young girl">
-            <img src="assets/pics/horndog/photo_2025-08-07_15-47-10.jpg" alt="Another thirsty reply">
+          <p>You go by “William H. Vicory PhD CP” on social media like it’s a badge of honor. But let’s be clear: You do
+            not have a PhD.</p>
+          <div class="tag-list">
+            <span class="tag">No Transcripts</span>
+            <span class="tag">No Institution</span>
+            <span class="tag">No Verifiable Degree</span>
+            <span class="tag">No Academic Record</span>
           </div>
-        
-          <p style="margin-top: 1rem;">This isn’t normal behavior. This is compulsive, embarrassing, and <strong>harmful to the woman you claim to love</strong>.</p>
+        </div>
+        <p style="margin: 1.5rem 0; font-weight: bold; color: #e50914; text-align: center;">Here's proof of his fake PhD
+          claims:</p>
+        <div class="image-grid">
+          <img src="assets/pics/phdFakes/phd1.png" alt="Fake PhD claim 1">
+          <img src="assets/pics/phdFakes/phd2.jpg" alt="Fake PhD claim 2">
+          <img src="assets/pics/phdFakes/phd3.png" alt="Fake PhD claim 3">
+          <img src="assets/pics/phdFakes/phd4.png" alt="Fake PhD claim 4">
+          <img src="assets/pics/phdFakes/phd5.png" alt="Additional fake PhD evidence">
+        </div>
+        <p>You add “PhD” to your usernames — like on your Instagram medspa page — in an effort to fool others and feed
+          your ego. You once even tweeted about Jill Biden’s doctorate while flexing your own fake one. That’s
+          <strong>stolen academic valor</strong>, and it’s disgraceful.</p>
+        <br>
+        <p>And what about this “Certified Botox Injector” claim? You’ve spent thousands of dollars chasing
+          half-certifications under sketchy, non-accredited programs so you can pretend to be a cosmetic injector — even
+          though you’re nearly 80 years old and have Parkinson’s disease, which literally affects your ability to hold a
+          syringe.</p>
+        <br>
+        <p>You’re advertising Botox treatments on your Instagram page (<a
+            href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a>),
+          trying to sell services you’re <strong>not licensed</strong> or <strong>qualified</strong> to perform. You
+          claim to serve San Antonio, Austin, and South Central Texas, and even promote boudoir photo shoots. 🤮🤮🤮 But
+          your only photo on that account is a dim selfie of you half-asleep in glasses. Nobody is coming to your house
+          for medical-grade facial injections. That’s not just embarrassing. It’s criminal negligence.</p>
+        <div class="single-image">
+          <img src="assets/pics/SwankBill.png" alt="Bill's Instagram medspa page">
+        </div>
+  </div>
+
+  <h2>But the lies don’t stop there. They never have.</h2>
+  <div class="box">
+
+    <div class="tag-heading"><span class="tag">Trail Ride Coffee</span></div>
+    <p>You bragged about creating your own "brand" of artisanal coffee... you never sold a single bean. Using stock
+      photos from the internet, even false quotes from your own family members.... You have two different sites - god
+      only knows how much you spent to have them build, and the monthly charges to keep them online while you sell
+      NOTHING</p>
+    <p>Here are the actual sites:
+      <a href="https://trailridecoffee.coffee/" target="_blank">trailridecoffee.coffee</a> and
+      <a href="https://www.trailridecoffee.com/" target="_blank">trailridecoffee.com</a>
+    </p>
+    <div class="image-flex">
+      <img src="assets/pics/trail-ride-coffee-1.png" alt="Trail Ride Coffee 1">
+      <img src="assets/pics/trail-ride-coffee-2.png" alt="Trail Ride Coffee 2">
+    </div>
+
+    <div class="tag-heading"><span class="tag">Level IV Body Armor MLM</span></div>
+    <p>You advertised ballistic vests and plates... just another MLM scheme you fell for.</p>
+    <div class="image-flex">
+      <img src="assets/pics/bodyarmor.png" alt="Armor 1">
+      <img src="assets/pics/bodyarmour2.png" alt="Armor 2">
+    </div>
+
+    <div class="tag-heading"><span class="tag">Swank Esthetics / Hawaiian Medspa</span></div>
+    <p>Another ego project with fake certifications, stolen logo photos, and no clients. You wasted thousands on
+      supplies and equipment to run this fake business.</p>
+    <div class="image-comparison">
+      <div class="comparison-item">
+        <div class="comparison-label">Bill's Stolen Version</div>
+        <img src="assets/pics/SwankBill.png" alt="Bill's fake logo">
+      </div>
+      <div class="comparison-item">
+        <div class="comparison-label">Original Business Logo</div>
+        <img src="assets/pics/stolenlogo.png" alt="Real logo">
+      </div>
+    </div>
+    <p><a href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a></p>
+    <br><br>
+
+    <div class="tag-heading"><span class="tag">Mushroom King Delusion</span></div>
+    <p>You tried to rebrand as a psychedelic healer — posting mushroom chocolates and tinctures like you were running a
+      legit biz. In reality, it was all just a kitchen photoshoot with no license, no fulfillment, and not a single
+      customer.</p>
+    <div class="image-flex">
+      <img src="assets/pics/Mushroom King/mush1.jpg" alt="Mushroom 1">
+      <img src="assets/pics/Mushroom King/mush2.jpg" alt="Mushroom 2">
+      <img src="assets/pics/Mushroom King/mush3.jpg" alt="Mushroom 3">
+    </div>
+
+  </div>
+
+  <p>You don’t actually sell products. You just post fake branding to feel important. You’re not an entrepreneur. You’re
+    a serial pretender.</p>
+  </div>
+
+  <div class="tag-heading"><span class="tag">The damage to your wife</span></div>
+  <div class="box">
+    <p>You have financially abused her for years. She’s stuck in a house that’s literally falling apart while you throw
+      away money on phony certifications and online scams. The chimney is rotting. The bathroom is broken. She works
+      harder than you ever have around the house. She needs dental surgery and has no teeth— but you’d rather send money
+      to Nigerian catfish scammers than take care of her.</p>
+    <p>You can’t afford basic living costs because you’re too busy playing make-believe doctor online.</p>
+    <div class="single-image">
+      <img src="assets/pics/rotting_chimey.png" alt="Chimney photo">
+    </div>
+  </div>
+
+  <div class="tag-heading"><span class="tag">Disturbing online behavior</span></div>
+  <div class="box">
+    <p>You flirt with catfish and cam girls. You’ve been caught sending money to scammers posing as women, calling them
+      your “babies.” You once paid <strong>$50 at 6:04 a.m.</strong> to “WILLIAM VICORY OMO MARY AKA BILL.”</p>
+    <p><strong>“Omo Mary” is a known alias used by Nigerian scammers.</strong></p>
+    <div class="single-image">
+      <img src="assets/pics/maryOMO.png" alt="Payment screenshot to Omo Mary aka Bill">
+    </div>
+  </div>
+
+  <div class="tag-heading"><span class="tag">The BDSM Contract</span></div>
+  <div class="box">
+    <p>You signed a BDSM “Sissy Cumslut” contract with full name, address, fake occupation, and blood type. You shared
+      it publicly. That’s humiliating — and you treated it like part of your “brand.”</p>
+    <div class="image-flex">
+      <img src="assets/pics/bdsm/photo_2025-08-07_15-42-47.jpg" alt="BDSM Contract Screenshot 1">
+      <img src="assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg" alt="BDSM Contract Screenshot 2">
+    </div>
+  </div>
+
+  <div class="tag-heading"><span class="tag">More deceit and damage</span></div>
+  <div class="box">
+    <li><strong>Canon EOS RP Camera Scheme:</strong> One of the most disgusting examples of financial waste — you paid
+      nearly <strong>$4,079.76</strong> for a camera that retails for <strong>$1,100 less</strong> online. Why? Because
+      you used a business credit card through Aaron's Rent-To-Own — racking up $1,684.77 in lease fees on a camera you
+      don't even use. Meanwhile, Oma can't eat solid food because you won’t help pay for her dental work.
+
+      <div class="image-flex">
+        <img src="assets/pics/camera/photo_2025-08-07_15-47-15.jpg" alt="Camera evidence 1">
+        <img src="assets/pics/camera/photo_2025-08-07_15-47-17.jpg" alt="Camera evidence 2">
+        <img src="assets/pics/camera/photo_2025-08-07_15-47-18.jpg" alt="Camera evidence 3">
+      </div>
+
+      <p>This wasn’t an investment — it was a vanity prop. Another high-interest scam paid through a sketchy business
+        account while your own wife's teeth are rotting in her mouth. You’re not a photographer. You’re not a content
+        creator. You’re a leech with expensive toys and no income.</p>
+
+      <div class="tag-heading"><span class="tag">Endless Porn Addiction & Predatory Obsession</span></div>
+      <div class="box">
+        <p>It’s impossible to capture the full extent of your horniness — there are <strong>thousands of
+            screenshots</strong> showing your nonstop thirst.</p>
+        <p>You spam comments on photos of women half your age (and younger), from Threads to Facebook to Instagram. You
+          reply to strangers saying “nobody wants me” with “I do” — like some sad, creepy NPC hoping to get lucky in the
+          replies.</p>
+        <p>You publicly beg cam girls for attention, praise random selfies with “🔥pretty❤️,” and hang out in “Open
+          Relationship” groups hitting “like” on every woman’s mirror selfie. You even brag in the comments about having
+          “had all” types of sex, as if anyone asked.</p>
+
+        <div class="image-scroll">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-43-06.jpg" alt="William replying to cam girl">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-43-09.jpg" alt="Thirst reply 'I do'">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-43-15.jpg" alt="Open relationship post like">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-43-17.jpg" alt="Sex brag comment">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-47-08.jpg" alt="Instagram 'pretty' comment">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-47-09.jpg" alt="Threads post liking young girl">
+          <img src="assets/pics/horndog/photo_2025-08-07_15-47-10.jpg" alt="Another thirsty reply">
         </div>
 
-      </li>
-      <p>And let’s not forget: you’ve hidden a used truck at church to lie about your finances, a truck forever putting you in debt, as you retardedly fell for every dealer scam in the book and financed the truck at almost double what it's worth. You’ve secretly bought things behind your wife’s back. You lie to her constantly. About your accounts. About your money. About your intentions. You are bleeding her dry — financially and emotionally.</p>
+        <p style="margin-top: 1rem;">This isn’t normal behavior. This is compulsive, embarrassing, and <strong>harmful
+            to the woman you claim to love</strong>.</p>
+      </div>
+
+    </li>
+    <p>And let’s not forget: you’ve hidden a used truck at church to lie about your finances, a truck forever putting
+      you in debt, as you retardedly fell for every dealer scam in the book and financed the truck at almost double what
+      it's worth. You’ve secretly bought things behind your wife’s back. You lie to her constantly. About your accounts.
+      About your money. About your intentions. You are bleeding her dry — financially and emotionally.</p>
+  </div>
+  <br><br>
+  <div class="tag-heading"><span class="tag">So this is it, Bill.</span></div>
+  <div class="box">
+
+    <p><strong>This is who you are:</strong></p>
+    <div class="tag-list">
+      <span class="tag">Compulsive Liar</span>
+      <span class="tag">Financial Abuser</span>
+      <span class="tag">Fake Doctor</span>
+      <span class="tag">Desperate Creep</span>
+      <span class="tag">Scammer</span>
+      <span class="tag">Rotting From Porn Addiction</span>
     </div>
-    <br><br>
-<div class="tag-heading"><span class="tag">So this is it, Bill.</span></div>
-<div class="box">
 
-  <p><strong>This is who you are:</strong></p>
-  <div class="tag-list">
-    <span class="tag">Compulsive Liar</span>
-    <span class="tag">Financial Abuser</span>
-    <span class="tag">Fake Doctor</span>
-    <span class="tag">Desperate Creep</span>
-    <span class="tag">Scammer</span>
-    <span class="tag">Rotting From Porn Addiction</span>
-  </div>
-
-  <p style="margin-top: 2rem;">If you have any shred of dignity left, here’s what you need to do:</p>
-  <div class="action-list">
-    <div>🛑 Delete all your fake accounts</div>
-    <div>🛑 Stop advertising unlicensed medical procedures</div>
-    <div>🛑 Apologize publicly for lying about your PhD</div>
-    <div>🛑 Sell your car and pay for my mother’s dental care</div>
-    <div>🛑 Get therapy</div>
-    <div>🛑 Stay off the internet — permanently</div>
-  </div>
-
-  <p style="margin-top: 2rem;">Because if you keep lying, I will keep posting.<br>If you try to rebuild another scam, I’ll expose that too.</p>
-  <p><strong>You are not the man you pretend to be.</strong><br>And now, <strong>everyone knows.</strong></p>
-  <p style="margin-top: 2rem;">– Ryley</p>
-</div>
-
-<style>
-  .tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  .tag {
-    background-color: #e50914;
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 1rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .tag-heading {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-  .action-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    font-weight: bold;
-    font-size: 1.05rem;
-    margin-top: 1rem;
-  }
-</style>
+    <p style="margin-top: 2rem;">If you have any shred of dignity left, here’s what you need to do:</p>
+    <div class="action-list">
+      <div>🛑 Delete all your fake accounts</div>
+      <div>🛑 Stop advertising unlicensed medical procedures</div>
+      <div>🛑 Apologize publicly for lying about your PhD</div>
+      <div>🛑 Sell your car and pay for my mother’s dental care</div>
+      <div>🛑 Get therapy</div>
+      <div>🛑 Stay off the internet — permanently</div>
     </div>
-    </section>
+
+    <p style="margin-top: 2rem;">Because if you keep lying, I will keep posting.<br>If you try to rebuild another scam,
+      I’ll expose that too.</p>
+    <p><strong>You are not the man you pretend to be.</strong><br>And now, <strong>everyone knows.</strong></p>
+    <p style="margin-top: 2rem;">– Ryley</p>
   </div>
-  
+
+  <style>
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background-color: #e50914;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-heading {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .action-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-weight: bold;
+      font-size: 1.05rem;
+      margin-top: 1rem;
+    }
+  </style>
+  </div>
+  </section>
+  </div>
+
   <!-- Modal for expanded images -->
   <div id="imageModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="modalImage">
   </div>
-  
-      </main>
-    </div>
-    
-    <footer class="footer">
-      This dossier will be continuously updated as new evidence and behavior emerge.
-    </footer>
-  
+
+  </main>
+  </div>
+
+  <footer class="footer">
+    This dossier will be continuously updated as new evidence and behavior emerge.
+  </footer>
+
   <script>
     // Get the modal
     var modal = document.getElementById("imageModal");
     var modalImg = document.getElementById("modalImage");
     var closeBtn = document.getElementsByClassName("close")[0];
-    
+
     // Add clickable class to all images
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var images = document.querySelectorAll('img');
-      images.forEach(function(img) {
+      images.forEach(function (img) {
         img.classList.add('clickable-image');
-        img.addEventListener('click', function() {
+        img.addEventListener('click', function () {
           modal.style.display = "block";
           modalImg.src = this.src;
           modalImg.alt = this.alt;
         });
       });
     });
-    
+
     // Close modal when clicking the X
-    closeBtn.onclick = function() {
+    closeBtn.onclick = function () {
       modal.style.display = "none";
     }
-    
+
     // Close modal when clicking outside the image
-    modal.onclick = function(e) {
+    modal.onclick = function (e) {
       if (e.target === modal) {
         modal.style.display = "none";
       }
     }
-    
+
     // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && modal.style.display === "block") {
         modal.style.display = "none";
       }
     });
   </script>
 </body>
+
 </html>
