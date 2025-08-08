@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William H. Vicory – Full Exposure Dossier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #3b82f6;
+      --accent-light: #60a5fa;
+      --red: #ef4444;
+      --red-dark: #dc2626;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-secondary: #cbd5e1;
+      --border: #334155;
+      --border-light: #475569;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 1rem;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Typography System */
+    .hero-title {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, #667eea 50%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
+      font-weight: 400;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-weight: 800;
+      color: var(--red);
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red) 0%, var(--red-dark) 100%);
+      border-radius: 2px;
+    }
+
+    .card-title {
+      font-size: clamp(1.3rem, 4vw, 1.6rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .body-text {
+      font-size: clamp(1rem, 2.5vw, 1.1rem);
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight-text {
+      font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+      font-weight: 600;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+
+    .quote-text {
+      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      font-style: italic;
+      color: var(--text-muted);
+      border-left: 4px solid var(--red);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    /* Layout Components */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: clamp(4rem, 10vw, 8rem) 1.5rem clamp(3rem, 8vw, 6rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.2;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-content {
+      padding: clamp(3rem, 8vw, 6rem) 0;
+    }
+
+    .section {
+      margin-bottom: clamp(4rem, 10vw, 8rem);
+    }
+
+    /* Card System */
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-xl);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red) 0%, var(--red-dark) 100%);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-2xl);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .evidence-card {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    /* Image System */
+    .image-container {
+      margin: 2rem 0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      border-color: var(--red);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+
+    .image-flex {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-flex img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .image-flex img:hover {
+      transform: scale(1.05);
+      border-color: var(--red);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+
+    .image-comparison {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .comparison-item {
+      text-align: center;
+    }
+
+    .comparison-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .comparison-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .comparison-item img:hover {
+      transform: scale(1.05);
+      border-color: var(--red);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+
+    .image-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 2rem 0;
+      margin: 2rem 0;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .image-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .image-scroll img {
+      height: 250px;
+      width: auto;
+      margin-right: 1.5rem;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .image-scroll img:hover {
+      transform: scale(1.1);
+      border-color: var(--red);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+
+    .single-image {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .single-image img {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: contain;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .single-image img:hover {
+      transform: scale(1.02);
+      border-color: var(--red);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+
+    /* List Styling */
+    .evidence-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    .evidence-list li {
+      background: rgba(255, 255, 255, 0.05);
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--red);
+      transition: all 0.3s ease;
+    }
+
+    .evidence-list li:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(8px);
+    }
+
+    .evidence-list strong {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: var(--accent-light);
+      border-bottom-color: var(--accent-light);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(20px);
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid var(--red);
+      border-radius: 20px;
+      box-shadow: 0 0 60px rgba(239, 68, 68, 0.5);
+      pointer-events: none;
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from { 
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+      to { 
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: var(--text);
+      font-size: 40px;
+      font-weight: 300;
+      cursor: pointer;
+      z-index: 1001;
+      transition: all 0.2s ease;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    .close:hover {
+      color: var(--red);
+      background: rgba(239, 68, 68, 0.2);
+      transform: scale(1.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1rem;
+      }
+      
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .image-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .image-flex img {
+        width: 100%;
+        max-width: 350px;
+      }
+      
+      .image-comparison {
+        grid-template-columns: 1fr;
+      }
+      
+      .comparison-item img {
+        height: 250px;
+      }
+      
+      .image-scroll img {
+        height: 200px;
+      }
+      
+      .modal-content {
+        max-width: 95%;
+        max-height: 95%;
+      }
+      
+      .close {
+        top: 15px;
+        right: 20px;
+        font-size: 32px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 14px;
+      }
+      
+      .card {
+        padding: 1.5rem;
+      }
+      
+      .image-scroll img {
+        height: 180px;
+      }
+    }
+
+    /* Animations */
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card {
+      animation: slideInUp 0.6s ease forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+
+    /* Enhanced Section Styling */
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      font-weight: 400;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .evidence-item {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .evidence-item:hover {
+      background: rgba(239, 68, 68, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+    }
+
+    .evidence-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .evidence-text {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .proof-section {
+      margin: 2rem 0;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .proof-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .proof-icon {
+      font-size: 1.5rem;
+    }
+
+    .proof-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .warning-box {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .warning-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .warning-content {
+      flex: 1;
+    }
+
+    .warning-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-text {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      color: white;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .evidence-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+      
+      .warning-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .evidence-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Enhanced Section Headers */
+    .section-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--red) 0%, #ff6b6b 50%, var(--red-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--text-muted);
+      font-weight: 400;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    /* Scheme Cards */
+    .scheme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .scheme-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scheme-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red) 0%, #ff6b6b 50%, var(--red-dark) 100%);
+    }
+
+    .scheme-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(239, 68, 68, 0.2);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .scheme-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .scheme-icon {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+    }
+
+    .scheme-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .scheme-content {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .scheme-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .scheme-links {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(239, 68, 68, 0.1);
+      border-radius: 12px;
+      border-left: 4px solid var(--red);
+    }
+
+    .scheme-links a {
+      color: var(--accent-light);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .scheme-links a:hover {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    /* Enhanced Typography */
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--red) 0%, #ff6b6b 50%, var(--red-dark) 100%);
+      border-radius: 3px;
+      box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .scheme-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .scheme-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+      
+      .scheme-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="hero-title">William H. Vicory</h1>
+      <p class="hero-subtitle">Full Exposure Dossier</p>
+      <p class="body-text">This page contains the complete, unaltered record of misconduct and deception.</p>
+    </div>
+  </header>
+  <div class="container">
+    <main class="main-content">
+      <section class="section">
+        <div class="card evidence-card">
+      <p>You’ve asked me to call you “dad” for years. But real fathers don’t betray, lie, manipulate, and rot their families from the inside while playing cowboy coffee roaster on Instagram.</p>
+      <p>This is your intervention — and your exposure. I hope it hurts, because the truth should.</p>
+      <p>The scams you’ve been running from every time you started another failed business, made another fake claim, or lied about who you are.</p>
+      <p><strong>You are not a doctor.</strong><br>
+      You are not a medical professional.<br>
+      You are not a business owner.<br>
+      You are not a husband.<br>
+      You are not a man of integrity.<br>
+      You are a fraud, a cheater, and a danger to anyone who believes the lies you keep posting online.</p>
+    </div>
+
+    <h2>Let’s start with your so-called “credentials.”</h2>
+    <div class="box">
+      <p>You go by “William H. Vicory PhD CP” on social media like it’s a badge of honor. But let’s be clear: You do not have a PhD.</p>
+      <ul>
+        <li>No transcripts.</li>
+        <li>No institution.</li>
+        <li>No verifiable degree.</li>
+        <li>No academic record.</li>
+      </ul>
+      <p style="margin: 1.5rem 0; font-weight: bold; color: #e50914; text-align: center;">Here's proof of his fake PhD claims:</p>
+      <div class="image-grid">
+        <img src="assets/pics/phdFakes/phd1.png" alt="Fake PhD claim 1">
+        <img src="assets/pics/phdFakes/phd2.jpg" alt="Fake PhD claim 2">
+        <img src="assets/pics/phdFakes/phd3.png" alt="Fake PhD claim 3">
+        <img src="assets/pics/phdFakes/phd4.png" alt="Fake PhD claim 4">
+        <img src="assets/pics/phdFakes/phd5.png" alt="Additional fake PhD evidence">
+      </div>
+      <p>You add “PhD” to your usernames — like on your Instagram medspa page — in an effort to fool others and feed your ego. You once even tweeted about Jill Biden’s doctorate while flexing your own fake one. That’s <strong>stolen academic valor</strong>, and it’s disgraceful.</p>
+      <p>And what about this “Certified Botox Injector” claim? You’ve spent thousands of dollars chasing half-certifications under sketchy, non-accredited programs so you can pretend to be a cosmetic injector — even though you’re nearly 80 years old and have Parkinson’s disease, which literally affects your ability to hold a syringe.</p>
+      <p>You’re advertising Botox treatments on your Instagram page (<a href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a>), trying to sell services you’re <strong>not licensed</strong> or <strong>qualified</strong> to perform. You claim to serve San Antonio, Austin, and South Central Texas, and even promote boudoir photo shoots. 🤮🤮🤮 But your only photo on that account is a dim selfie of you half-asleep in glasses. Nobody is coming to your house for medical-grade facial injections. That’s not just embarrassing. It’s criminal negligence.</p>
+      <div class="single-image">
+        <img src="assets/pics/SwankBill.png" alt="Bill's Instagram medspa page">
+      </div>
+    </div>
+
+    <h2>But the lies don’t stop there. They never have.</h2>
+    <div class="box">
+      <p>Let’s go down your long list of failed schemes — and trust me, there are many more:</p>
+      <ul>
+        <li><strong>Trail Ride Coffee:</strong> You bragged about creating your own "brand" of artisanal coffee... you never sold a single bean. Using stock photos from the internet, even false quotes from your own family members.... You have two different sites - god only knows how much you spent to have them build, and the monthly charges to keep them online while you sell NOTHING. Here are the actual sites: <a href="https://trailridecoffee.coffee/" target="_blank">trailridecoffee.coffee</a> and <a href="https://www.trailridecoffee.com/" target="_blank">trailridecoffee.com</a>
+          <div class="image-flex">
+            <img src="assets/pics/trail-ride-coffee-1.png" alt="Trail Ride Coffee evidence 1">
+            <img src="assets/pics/trail-ride-coffee-2.png" alt="Trail Ride Coffee evidence 2">
+          </div>
+        </li>
+
+        <li><strong>Level IV Body Armor Sales:</strong> You advertised ballistic vests and plates... just another MLM scheme you fell for.
+          <div class="image-flex">
+            <img src="assets/pics/bodyarmor.png" alt="Level IV Body Armor Sales evidence 1">
+            <img src="assets/pics/bodyarmour2.png" alt="Level IV Body Armor Sales evidence 2">
+          </div>
+        </li>
+        <li><strong>Swank Esthetics / Hawaiian Medspa:</strong> Another ego project with fake certifications, stolen logo photos, and no clients... Yet you've wasted thousands on supplies and equipment to run this business. Here's proof of how he stole the logo from a real business:
+          <div class="image-comparison">
+            <div class="comparison-item">
+              <div class="comparison-label">Bill's Stolen Version</div>
+              <img src="assets/pics/SwankBill.png" alt="Bill's stolen Swank logo">
+            </div>
+            <div class="comparison-item">
+              <div class="comparison-label">Original Business Logo</div>
+              <img src="assets/pics/stolenlogo.png" alt="Original business logo that Bill stole">
+            </div>
+          </div>
+          <p style="margin-top: 1rem;">His Instagram page: <a href="https://www.instagram.com/wiliam_hawaiian_medspa/" target="_blank">@wiliam_hawaiian_medspa</a></p>
+        </li>
+        <li><strong>“Medicinal Mushroom King” Delusion:</strong> You tried to rebrand as some psychedelic healer — posting mushroom chocolates, tinctures, and gummies like you were running a real biz. In reality, you bought this crap, took a few blurry pics in the kitchen, then called yourself a king. No license. No storefront. No fulfillment. Just stockpiled product and another LARP fantasy.
+          <div class="image-flex">
+            <img src="assets/pics/Mushroom King/mush1.jpg" alt="Mushroom evidence 1">
+            <img src="assets/pics/Mushroom King/mush2.jpg" alt="Mushroom evidence 2">
+            <img src="assets/pics/Mushroom King/mush3.jpg" alt="Mushroom evidence 3">
+          </div>
+        </li>
+        
+      </ul>
+      
+      <p>You don’t actually sell products. You just post fake branding to feel important. You’re not an entrepreneur. You’re a serial pretender.</p>
+    </div>
+
+    <h2>The damage to your wife</h2>
+    <div class="box">
+      <p>You have financially abused her for years. She’s stuck in a house that’s literally falling apart while you throw away money on phony certifications and online scams. The chimney is rotting. The bathroom is broken. She works harder than you ever have around the house. She needs dental surgery and has no teeth— but you’d rather send money to Nigerian catfish scammers than take care of her.</p>
+      <p>You can’t afford basic living costs because you’re too busy playing make-believe doctor online.</p>
+      <div class="single-image">
+        <img src="assets/pics/rotting_chimey.png" alt="Chimney photo">
+      </div>
+    </div>
+
+    <h2>Disturbing online behavior</h2>
+    <div class="box">
+      <p>You flirt with catfish and cam girls. You’ve been caught sending money to scammers posing as women, calling them your “babies.” You once paid <strong>$50 at 6:04 a.m.</strong> to “WILLIAM VICORY OMO MARY AKA BILL.”</p>
+      <p><strong>“Omo Mary” is a known alias used by Nigerian scammers.</strong></p>
+      <div class="single-image">
+        <img src="assets/pics/maryOMO.png" alt="Payment screenshot to Omo Mary aka Bill">
+      </div>
+    </div>
+
+    <h2>The BDSM Contract</h2>
+    <div class="box">
+      <p>You signed a BDSM “Sissy Cumslut” contract with full name, address, fake occupation, and blood type. You shared it publicly. That’s humiliating — and you treated it like part of your “brand.”</p>
+      <div class="image-flex">
+        <img src="assets/pics/bdsm/photo_2025-08-07_15-42-47.jpg" alt="BDSM Contract Screenshot 1">
+        <img src="assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg" alt="BDSM Contract Screenshot 2">
+      </div>
+    </div>
+
+    <h2>More deceit and damage</h2>
+    <div class="box">
+      <li><strong>Canon EOS RP Camera Scheme:</strong> One of the most disgusting examples of financial waste — you paid nearly <strong>$4,079.76</strong> for a camera that retails for <strong>$1,100 less</strong> online. Why? Because you used a business credit card through Aaron's Rent-To-Own — racking up $1,684.77 in lease fees on a camera you don't even use. Meanwhile, Oma can't eat solid food because you won’t help pay for her dental work.
+
+        <div class="image-flex">
+          <img src="assets/pics/camera/photo_2025-08-07_15-47-15.jpg" alt="Camera evidence 1">
+          <img src="assets/pics/camera/photo_2025-08-07_15-47-17.jpg" alt="Camera evidence 2">
+          <img src="assets/pics/camera/photo_2025-08-07_15-47-18.jpg" alt="Camera evidence 3">
+        </div>
+      
+        <p>This wasn’t an investment — it was a vanity prop. Another high-interest scam paid through a sketchy business account while your own mother’s teeth are rotting in her mouth. You’re not a photographer. You’re not a content creator. You’re a leech with expensive toys and no income.</p>
+
+        <h2>Endless Porn Addiction & Predatory Obsession</h2>
+        <div class="box">
+          <p>It’s impossible to capture the full extent of your horniness — there are <strong>thousands of screenshots</strong> showing your nonstop thirst.</p>
+          <p>You spam comments on photos of women half your age (and younger), from Threads to Facebook to Instagram. You reply to strangers saying “nobody wants me” with “I do” — like some sad, creepy NPC hoping to get lucky in the replies.</p>
+          <p>You publicly beg cam girls for attention, praise random selfies with “🔥pretty❤️,” and hang out in “Open Relationship” groups hitting “like” on every woman’s mirror selfie. You even brag in the comments about having “had all” types of sex, as if anyone asked.</p>
+        
+          <div class="image-scroll">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-43-06.jpg" alt="William replying to cam girl">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-43-09.jpg" alt="Thirst reply 'I do'">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-43-15.jpg" alt="Open relationship post like">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-43-17.jpg" alt="Sex brag comment">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-47-08.jpg" alt="Instagram 'pretty' comment">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-47-09.jpg" alt="Threads post liking young girl">
+            <img src="assets/pics/horndog/photo_2025-08-07_15-47-10.jpg" alt="Another thirsty reply">
+          </div>
+        
+          <p style="margin-top: 1rem;">This isn’t normal behavior. This is compulsive, embarrassing, and <strong>harmful to the woman you claim to love</strong>.</p>
+        </div>
+
+      </li>
+      <p>And let’s not forget: you’ve hidden a used truck at church to lie about your finances, a truck forever putting you in debt, as you retardedly fell for every dealer scam in the book and financed the truck at almost double what it's worth. You’ve secretly bought things behind your wife’s back. You lie to her constantly. About your accounts. About your money. About your intentions. You are bleeding her dry — financially and emotionally.</p>
+    </div>
+    <br><br>
+<h2>So this is it, Bill.</h2>
+<div class="box">
+
+  <p><strong>This is who you are:</strong></p>
+  <div class="tag-list">
+    <span class="tag">Compulsive Liar</span>
+    <span class="tag">Financial Abuser</span>
+    <span class="tag">Fake Doctor</span>
+    <span class="tag">Desperate Creep</span>
+    <span class="tag">Scammer</span>
+    <span class="tag">Rotting From Porn Addiction</span>
+  </div>
+
+  <p style="margin-top: 2rem;">If you have any shred of dignity left, here’s what you need to do:</p>
+  <div class="action-list">
+    <div>🛑 Delete all your fake accounts</div>
+    <div>🛑 Stop advertising unlicensed medical procedures</div>
+    <div>🛑 Apologize publicly for lying about your PhD</div>
+    <div>🛑 Sell your car and pay for my mother’s dental care</div>
+    <div>🛑 Get therapy</div>
+    <div>🛑 Stay off the internet — permanently</div>
+  </div>
+
+  <p style="margin-top: 2rem;">Because if you keep lying, I will keep posting.<br>If you try to rebuild another scam, I’ll expose that too.</p>
+  <p><strong>You are not the man you pretend to be.</strong><br>And now, <strong>everyone knows.</strong></p>
+  <p style="margin-top: 2rem;">– Ryley</p>
+</div>
+
+<style>
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .tag {
+    background-color: #e50914;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+  }
+</style>
+    </div>
+    </section>
+  </div>
+  
+  <!-- Modal for expanded images -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+      </main>
+    </div>
+    
+    <footer class="footer">
+      This dossier will be continuously updated as new evidence and behavior emerge.
+    </footer>
+  
+  <script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    
+    // Add clickable class to all images
+    document.addEventListener('DOMContentLoaded', function() {
+      var images = document.querySelectorAll('img');
+      images.forEach(function(img) {
+        img.classList.add('clickable-image');
+        img.addEventListener('click', function() {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+        });
+      });
+    });
+    
+    // Close modal when clicking the X
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // Close modal when clicking outside the image
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.style.display === "block") {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
