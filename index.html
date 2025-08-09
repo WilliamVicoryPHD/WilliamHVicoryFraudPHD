@@ -38,6 +38,9 @@
       --pad: clamp(18px, 3vw, 32px);
 
       --nav-h: 64px; /* sticky nav height */
+      --safe-top: max(16px, env(safe-area-inset-top));
+      --safe-right: max(16px, env(safe-area-inset-right));
+      --safe-bottom: max(16px, env(safe-area-inset-bottom));
     }
 
     /* =========================================
@@ -182,6 +185,10 @@
 
     /* Selective crop offset for grid images */
     .crop-down15 { object-position: 50% 15% !important; }
+    .crop-center { object-position: 50% 50% !important; }
+    .crop-down10 { object-position: 50% 10% !important; }
+    .crop-down20 { object-position: 50% 20% !important; }
+    .crop-down35 { object-position: 50% 35% !important; }
 
     .image-flex img:hover, .image-grid img:hover, .comparison-item img:hover, .single-image img:hover, .image-scroll img:hover {
       transform: translateY(-3px) scale(1.02); border-color: rgba(34,211,238,.6); box-shadow: 0 22px 60px rgba(34,211,238,.25);
@@ -198,10 +205,10 @@
     footer.footer { padding: 48px var(--pad); text-align: center; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,.08); background: #090f1a; }
 
     /* Modal */
-    .modal { display: none; position: fixed; inset: 0; z-index: 80; background: rgba(0,0,0,.85); backdrop-filter: blur(8px); }
+    .modal { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,.85); backdrop-filter: blur(8px); overflow: auto; overscroll-behavior: contain; }
     .modal.open { display: block; }
-    .modal-content { max-width: min(92vw, 1200px); max-height: 90vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: var(--r-lg); border: 2px solid rgba(34,211,238,.55); box-shadow: 0 40px 120px rgba(34,211,238,.35); }
-    .close { position: absolute; top: 20px; right: 24px; width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: #fff; font-size: 28px; cursor: pointer; transition: transform .2s ease, background .2s ease; }
+    .modal-content { max-width: min(92vw, 1200px); max-height: calc(100vh - (var(--safe-top) + var(--safe-bottom) + 64px)); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: var(--r-lg); border: 2px solid rgba(34,211,238,.55); box-shadow: 0 40px 120px rgba(34,211,238,.35); }
+    .close { position: fixed; top: var(--safe-top); right: var(--safe-right); width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: #fff; font-size: 28px; cursor: pointer; transition: transform .2s ease, background .2s ease; z-index: 10001; }
     .close:hover { transform: scale(1.05); background: rgba(244,63,94,.25); }
 
     /* Responsive niceties */
@@ -371,8 +378,8 @@
           <p>You tried to rebrand as a psychedelic healer — posting mushroom chocolates and tinctures like you were running a legit biz. In reality, it was all just a kitchen photoshoot with no license, no fulfillment, and not a single customer.</p>
           <div class="image-flex">
             <img src="assets/pics/Mushroom King/mush1.jpg" alt="Mushroom 1" />
-            <img src="assets/pics/Mushroom King/mush2.jpg" alt="Mushroom 2" />
-            <img src="assets/pics/Mushroom King/mush3.jpg" alt="Mushroom 3" />
+            <img class="crop-center" src="assets/pics/Mushroom King/mush2.jpg" alt="Mushroom 2" />
+            <img class="crop-center" src="assets/pics/Mushroom King/mush3.jpg" alt="Mushroom 3" />
             <img src="assets/pics/Mushroom King/mush4.png" alt="Bill’s failed mushroom business Instagram grid" />
           </div>
         </div>
@@ -443,7 +450,7 @@
           <p>You signed a BDSM “Sissy Cumslut” contract with full name, address, fake occupation, and blood type. You shared it publicly. That’s humiliating — and you treated it like part of your “brand.”</p>
           <div class="image-flex">
             <img src="assets/pics/bdsm/photo_2025-08-07_15-42-47.jpg" alt="BDSM Contract Screenshot 1" />
-            <img src="assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg" alt="BDSM Contract Screenshot 2" />
+            <img class="crop-center" src="assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg" alt="BDSM Contract Screenshot 2" />
           </div>
         </div>
       </section>
@@ -454,9 +461,9 @@
         <div class="card">
           <li><strong>Canon EOS RP Camera Scheme:</strong> One of the most disgusting examples of financial waste — you paid nearly <strong>$4,079.76</strong> for a camera that retails for <strong>$1,100 less</strong> online. Why? Because you used a business credit card through Aaron's Rent-To-Own — racking up <strong>$1,684.77</strong> in lease fees on a camera you don't even use. Meanwhile, your wife can't eat solid food because you won’t help pay for her dental work.
             <div class="image-flex" style="margin-top:.75rem">
-              <img src="assets/pics/camera/photo_2025-08-07_15-47-15.jpg" alt="Camera evidence 1" />
-              <img src="assets/pics/camera/photo_2025-08-07_15-47-17.jpg" alt="Camera evidence 2" />
-              <img src="assets/pics/camera/photo_2025-08-07_15-47-18.jpg" alt="Camera evidence 3" />
+              <img class="crop-center" src="assets/pics/camera/photo_2025-08-07_15-47-15.jpg" alt="Camera evidence 1" />
+              <img class="crop-center" src="assets/pics/camera/photo_2025-08-07_15-47-17.jpg" alt="Camera evidence 2" />
+              <img class="crop-center" src="assets/pics/camera/photo_2025-08-07_15-47-18.jpg" alt="Camera evidence 3" />
             </div>
             <p>This wasn’t an investment — it was a vanity prop. Another high-interest scam paid through a sketchy business account while your own wife's teeth are rotting in her mouth. You’re not a photographer. You’re not a content creator. You’re a leech with expensive toys and no income.</p>
 
@@ -467,8 +474,8 @@
           </li>
           <p>And let’s not forget: you hid a <strong>USED 2024 Ford Ranger XLT (Sport package)</strong> at <strong>Danielle Monclova’s</strong> house — a single woman — while pretending it didn’t exist. You’ve taken her out to breakfast and lunch at <strong>The Boat</strong> in Kerrville at least <strong>26 times</strong>. The paperwork shows you agreed to predatory terms: even after a “reduction,” your APR sits at <strong>17.62%</strong> on <strong>$42,722.87</strong> financed, for a <strong>finance charge of $28,561.63</strong> and a <strong>total of payments about $71,284–$71,984</strong>. That’s interest stacked so high you’re paying nearly the price of the truck again — just in financing.</p>
           <div class="image-flex" style="margin-top:.75rem">
-            <img src="assets/pics/truck1.jpg" alt="Santander notice showing APR change to 17.62% and total of payments ~$71,284.50" />
-            <img src="assets/pics/truck2.jpg" alt="Installment contract showing total payments ~$71,984.25 on used truck" />
+            <img class="crop-down10" src="assets/pics/truck1.jpg" alt="Santander notice showing APR change to 17.62% and total of payments ~$71,284.50" />
+            <img class="crop-down35" src="assets/pics/truck2.jpg" alt="Installment contract showing total payments ~$71,984.25 on used truck" />
           </div>
         </div>
       </section>
@@ -526,6 +533,9 @@
         modalImg.src = t.src;
         modalImg.alt = t.alt || '';
         modal.setAttribute('aria-hidden', 'false');
+        // Prevent background scroll while modal is open (mobile-safe)
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
       }
     });
 
@@ -533,10 +543,40 @@
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
       modalImg.removeAttribute('src');
+      // Restore background scroll
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
     };
 
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    // Swipe down to close (mobile)
+    (function(){
+      let startY = 0, startX = 0, tracking = false;
+      const Y_THRESHOLD = 90; // px to qualify as a downward swipe
+      const X_TOLERANCE = 60; // keep mostly vertical
+
+      modal.addEventListener('touchstart', (e) => {
+        if (!modal.classList.contains('open')) return;
+        if (e.touches.length !== 1) return;
+        tracking = true;
+        startY = e.touches[0].clientY;
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+
+      modal.addEventListener('touchmove', (e) => {
+        if (!tracking) return;
+        const dy = e.touches[0].clientY - startY;
+        const dx = e.touches[0].clientX - startX;
+        if (dy > Y_THRESHOLD && Math.abs(dx) < X_TOLERANCE) {
+          tracking = false;
+          closeModal();
+        }
+      }, { passive: true });
+
+      modal.addEventListener('touchend', () => { tracking = false; }, { passive: true });
+      modal.addEventListener('touchcancel', () => { tracking = false; }, { passive: true });
+    })();
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
     // ===== Nav: mobile toggle
