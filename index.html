@@ -116,6 +116,17 @@
     /* =========================================
        Components
     ==========================================*/
+    /* Emphasis headline for critical claim */
+    .mega-claim {
+      font-size: clamp(1.75rem, 4.8vw, 2.75rem);
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: .01em;
+      margin: 1rem 0 .75rem;
+      background: linear-gradient(90deg, #ffffff, #b1f5ff 45%, #ffd0da 95%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      text-shadow: 0 14px 46px rgba(244,63,94,.22);
+    }
     .card {
       background: var(--bg-card);
       border: 1px solid rgba(255,255,255,.08);
@@ -149,14 +160,15 @@
     .image-grid { --min: 280px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr)); margin: 1rem 0 1.5rem; }
     /* 3x3 grid for account screenshots */
     .image-grid.accounts-3x3 { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-    .image-grid.accounts-3x3 img { height: 160px; object-fit: cover; }
+    .image-grid.accounts-3x3 img { height: 160px; object-fit: cover; object-position: top; }
     @media (max-width: 780px) {
       .image-grid.accounts-3x3 { grid-template-columns: repeat(2, 1fr); }
     }
     .image-flex { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
     .image-flex img, .image-grid img, .comparison-item img, .single-image img, .image-scroll img { border-radius: var(--r-md); border: 1px solid rgba(255,255,255,.1); box-shadow: 0 12px 32px rgba(0,0,0,.28); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .image-flex img { width: clamp(260px, 42vw, 380px); height: clamp(230px, 32vw, 320px); object-fit: cover; }
-    .image-grid img { width: 100%; height: clamp(230px, 32vw, 280px); object-fit: cover; }
+    .image-flex img { width: clamp(260px, 42vw, 380px); height: clamp(230px, 32vw, 320px); object-fit: cover; object-position: top; }
+    .image-grid img { width: 100%; height: clamp(230px, 32vw, 280px); object-fit: cover; object-position: top; }
+    .comparison-item img { object-position: top; }
 
     .image-comparison { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin: 1rem 0 1.25rem; }
     .comparison-item { text-align: center; }
@@ -167,6 +179,9 @@
     .image-scroll img { height: clamp(160px, 30vw, 240px); width: auto; display: inline-block; margin-right: 16px; }
 
     .single-image { text-align: center; margin: 1rem 0 1.5rem; }
+
+    /* Selective crop offset for grid images */
+    .crop-down15 { object-position: 50% 15% !important; }
 
     .image-flex img:hover, .image-grid img:hover, .comparison-item img:hover, .single-image img:hover, .image-scroll img:hover {
       transform: translateY(-3px) scale(1.02); border-color: rgba(34,211,238,.6); box-shadow: 0 22px 60px rgba(34,211,238,.25);
@@ -193,7 +208,7 @@
     @media (max-width: 780px) {
       .hero .logo { width: 132px; }
       .image-flex img { width: 100%; height: 240px; }
-      .comparison-item img { height: 220px; object-fit: cover; }
+      .comparison-item img { height: 220px; object-fit: cover; object-position: top; }
       .wrap { padding: 0 clamp(14px, 3.5vw, 22px); }
     }
 
@@ -244,8 +259,53 @@
         </div>
 
         <h2>Let’s start with your so-called “credentials.”</h2>
+        <div class="single-image">
+          <img src="assets/pics/lightchruch/revdr.png" alt="Certificate from The Universal Light; 'Doctor of Philosophy in Metaphysics'; date visible on image" />
+        </div>
+        <!-- === BEGIN: Accreditation Proof & Costs (Texas) === -->
+        <section id="fake-phd" class="section">
+          <div class="card">
+            <h2 class="h2">Accreditation & Degree Verification — Public Records</h2>
+            <p class="body">You present a certificate titled <strong>“Doctor of Philosophy in Metaphysics”</strong> from an organization called <strong>The Universal Light</strong>. The items below are public, verifiable points readers can check directly:</p>
+            <ol class="body" style="margin-left:1.15rem">
+              <li><strong>Degrees sold for a fixed fee:</strong> the issuer advertises purchasable credentials including a “PhD in Metaphysics” for <strong>$300</strong> (or <strong>$200</strong> if ordained), plus ordination and other certificates. (Captured from their public pages.)</li>
+              <li><strong>Not an accredited academic PhD:</strong> as of August 9, 2025, the issuer and any claimed “accreditor” do not appear in the U.S. Department of Education’s DAPIP or the CHEA recognized directories for accredited degree‑granting institutions.</li>
+              <li><strong>Texas law context:</strong> Texas Penal Code §32.52 restricts using or claiming to hold a <em>fraudulent or substandard</em> degree (as defined in Education Code §61.302) in advertising or to obtain a benefit.</li>
+            </ol>
+
+
+          </div>
+
+          <div class="single-image">
+            <img src="assets/pics/lightchruch/rev.png" alt="Ordination/related certificate from The Universal Light; details visible on image" />
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Costs You Paid</h3>
+            <p class="body">What a huge waste of money!</p>
+            <ul class="body" id="costList2" style="margin:0; padding-left:1.1rem; list-style:disc">
+              <li data-amount="75">Minister Ordination — <strong>$75</strong></li>
+              <li data-amount="25">Annual dues — <strong>$25</strong></li>
+              <li data-amount="50">Physio/Spiritual Massage certificate — <strong>$50</strong></li>
+              <li data-amount="75">Bachelor (Religious/Theology) — <strong>$75</strong></li>
+              <li data-amount="150">Master (Religious Education) — <strong>$150</strong></li>
+              <li data-amount="300">PhD in Metaphysics — <strong>$300</strong> <span class="muted">(set to $200 here if ordained)</span></li>
+            </ul>
+            <div style="margin-top:.75rem; font-weight:900; font-size:1.15rem;">Estimated Spend Total: $675</div>
+            <p class="body" style="margin-top:.4rem; color:#a7afbe">Do you even practice any of this stuff?</p>
+          </div>
+
+          <div class="card evidence">
+            <h3 class="card-title">How You’re Using This (Promotion/Advantage in Texas)</h3>
+            <p class="body">
+              You display and promote the title <strong>“PhD”</strong> on public-facing profiles and in connection with services (including med‑spa/“injectables” content and usernames). That is using a claimed degree for <em>promotion and advantage</em> in Texas. Texas Penal Code §32.52 states that using or claiming to hold a <em>fraudulent or substandard</em> degree in advertising or to obtain a benefit is an offense. This page documents your promotional use alongside the issuer’s fee‑for‑credential structure and the lack of recognized academic accreditation.
+            </p>
+          </div>
+
+        </section>
+        <!-- === END: Accreditation Proof & Costs (Texas) === -->
         <div class="card">
-          <p>You go by “William H. Vicory PhD CP” on social media like it’s a badge of honor. But let’s be clear: You do not have a PhD.</p>
+          <p class="mega-claim" role="heading" aria-level="2">You go by “William H. Vicory PhD CP” on social media like it’s a badge of honor. But let’s be clear: You do not have a PhD.</p>
           <div class="tag-list">
             <span class="tag">No Transcripts</span>
             <span class="tag">No Institution</span>
@@ -256,8 +316,8 @@
 
         <p style="margin:1rem 0 1.1rem; font-weight:800; color:#e50914; text-align:center;">Here's proof of his fake PhD claims:</p>
         <div class="image-grid">
-          <img src="assets/pics/phdFakes/phd1.png" alt="Fake PhD claim 1" />
-          <img src="assets/pics/phdFakes/phd2.jpg" alt="Fake PhD claim 2" />
+          <img class="crop-down15" src="assets/pics/phdFakes/phd1.png" alt="Fake PhD claim 1" />
+          <img class="crop-down15" src="assets/pics/phdFakes/phd2.jpg" alt="Fake PhD claim 2" />
           <img src="assets/pics/phdFakes/phd3.png" alt="Fake PhD claim 3" />
           <img src="assets/pics/phdFakes/phd4.png" alt="Fake PhD claim 4" />
           <img src="assets/pics/phdFakes/phd5.png" alt="Additional fake PhD evidence" />
