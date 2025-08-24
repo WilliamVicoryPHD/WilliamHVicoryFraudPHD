@@ -97,6 +97,50 @@
     rel="stylesheet" />
   <style>
     /* =========================================
+       Update Block Special Styling (Red Alert Card)
+    ==========================================*/
+    .update-block {
+      background: rgba(244, 63, 94, 0.08);
+      border: 2px solid #f43f5e;
+      border-radius: var(--r-lg);
+      padding: clamp(22px, 3.4vw, 34px);
+      margin-top: 2rem;
+      box-shadow: 0 0 20px rgba(244, 63, 94, 0.45);
+    }
+    .update-block h3 {
+      color: #fff;
+      background: #f43f5e;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      animation: flash 1.5s infinite;
+    }
+    @keyframes flash {
+      0%, 100% { background-color: #f43f5e; color: #fff; }
+      50% { background-color: #fff; color: #f43f5e; }
+    }
+    .update-block .evidence-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 1rem;
+    }
+    .update-block .evidence-images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: var(--r-md);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .update-block .evidence-images img:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 40px rgba(244,63,94,0.35);
+    }
+    /* =========================================
        Modern Reset & Complementary Design Tokens
     ==========================================*/
     *,
@@ -913,6 +957,46 @@
         <p>You don’t actually sell products. You just post fake branding to feel important. You’re not an entrepreneur.
           You’re a serial pretender.</p>
       </section>
+
+      <!-- BEGIN: Inserted Update Block (August 23, 2025) -->
+      <div class="update-block" id="update-2025-08-23">
+        <h3>Update — August 23, 2025</h3>
+        <p>
+          In the time it took to put this website together, MySpaLive banned his account after he was caught making sexual comments toward women while repping his “business” profile. He didn’t shut it down himself — he was kicked off.
+        </p>
+        <p>
+          And what does he do next? Overnight, even after being warned this site would go live with SEO optimization to make sure anyone searching his name or failed businesses would see it first, he’s already rebranded himself as a <strong>“Baby Boomer Income Coach”</strong> and a so‑called <strong>“Digital Money Coach.”</strong>
+        </p>
+        <p>
+          Here’s the truth: it’s just another get‑rich‑quick scam. Look at the sites he’s clearly modeling himself after or even buying into:
+        </p>
+        <ul>
+          <li><a href="https://www.digital-baby-boomer.com" target="_blank">digital-baby-boomer.com</a></li>
+          <li><a href="https://gkv.com/boomers/the-digital-baby-boomer-how-to-drive-online-sales/" target="_blank">GKV’s “Digital Baby Boomer” marketing pitch</a></li>
+        </ul>
+        <p>
+          There are dozens of other copycats online pushing the same recycled garbage (<em>see the attached examples below</em>). This isn’t innovation — it’s paying into yet another MLM‑style scheme. Instead of making money, he’s likely sinking deeper into debt chasing the same pipe dream he’s been selling for years.
+        </p>
+        <p>
+          And while he’s pushing this new “business,” he’s right back to his old behavior — flirting with cam‑girl bots and women online, conducting the same perverted online adultery that got him in trouble in the first place (<em>see his Twitter replies as of August 23rd</em>).
+        </p>
+        <ul>
+          <li>Failed businesses.</li>
+          <li>Banned accounts.</li>
+          <li>Wasting money on digital snake oil.</li>
+          <li>Cheating online like he always has.</li>
+        </ul>
+        <p>
+          Why would anyone trust financial advice from this man? The only lessons he can offer are how to lose money, destroy your marriage, and embarrass yourself publicly — again and again.
+        </p>
+        <div class="evidence-images">
+          <img src="assets/pics/digitalboomer/twitter.png" alt="Twitter profile showing Baby Boomer Income Coach" />
+          <img src="assets/pics/digitalboomer/tiktik.png" alt="TikTok profile screenshot" />
+          <img src="assets/pics/digitalboomer/onlinecheating.jpg" alt="Online cheating evidence" />
+          <img src="assets/pics/digitalboomer/othercopycats.png" alt="Other Baby Boomer copycats" />
+        </div>
+      </div>
+      <!-- END: Inserted Update Block (August 23, 2025) -->
 
       <!-- NEGLECT TO FAMILY -->
       <section id="neglect-to-family">
