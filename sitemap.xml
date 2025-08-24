@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://williamvicory.com/</loc>
     <lastmod>2025-08-23</lastmod>
@@ -9,5 +10,264 @@
     <loc>https://williamvicory.com/dossier.html</loc>
     <lastmod>2025-08-23</lastmod>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/twitter.png</image:loc>
+      <image:title>William Vicory — Baby Boomer Income Coach (Twitter screenshot)</image:title>
+      <image:caption>Twitter bio and replies showing the rebrand, Aug 23, 2025.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/tiktik.jpeg</image:loc>
+      <image:title>William Vicory — Digital Money Coach (TikTok)</image:title>
+      <image:caption>TikTok profile pitching $597 passive income scheme.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/othercopycats.png</image:loc>
+      <image:title>Digital Baby Boomer copycats</image:title>
+      <image:caption>Multiple similar “digital baby boomer” coach accounts online.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/onlinecheating.jpg</image:loc>
+      <image:title>William Vicory — online misconduct</image:title>
+      <image:caption>Evidence of flirtatious replies and online cheating behavior, Aug 23, 2025.</image:caption>
+    </image:image>
+    <!-- Hero image -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/billhappy.jpg</image:loc>
+      <image:title>William Vicory smiling — Hero Image</image:title>
+      <image:caption>Promotional image of William Vicory smiling, used as hero image for dossier.</image:caption>
+    </image:image>
+    <!-- Fake PhD set -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/revdr.png</image:loc>
+      <image:title>William Vicory — “Rev. Dr.” credential image</image:title>
+      <image:caption>William Vicory using “Rev. Dr.” in online profiles as part of exaggerated credentials.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/rev.png</image:loc>
+      <image:title>William Vicory — Reverend title screenshot</image:title>
+      <image:caption>William Vicory referencing Reverend title in digital communications.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/phd1.png</image:loc>
+      <image:title>William Vicory — Fake PhD Certificate 1</image:title>
+      <image:caption>First example of William Vicory’s questionable PhD certificate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/phd2.png</image:loc>
+      <image:title>William Vicory — Fake PhD Certificate 2</image:title>
+      <image:caption>Second example of William Vicory’s fake PhD documentation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/phd3.png</image:loc>
+      <image:title>William Vicory — Fake PhD Certificate 3</image:title>
+      <image:caption>Third variant of William Vicory’s fabricated PhD certificate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/phd4.png</image:loc>
+      <image:title>William Vicory — Fake PhD Certificate 4</image:title>
+      <image:caption>Fourth certificate image used by William Vicory to claim PhD status.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/phd5.png</image:loc>
+      <image:title>William Vicory — Fake PhD Certificate 5</image:title>
+      <image:caption>Fifth and final fake PhD certificate associated with William Vicory.</image:caption>
+    </image:image>
+    <!-- Failed Businesses -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/trail-ride-coffee-1.png</image:loc>
+      <image:title>Trail Ride Coffee — Business attempt by William Vicory (1)</image:title>
+      <image:caption>First promotional image from William Vicory’s failed Trail Ride Coffee business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/trail-ride-coffee-2.png</image:loc>
+      <image:title>Trail Ride Coffee — Business attempt by William Vicory (2)</image:title>
+      <image:caption>Second promotional image from William Vicory’s unsuccessful Trail Ride Coffee venture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/bodyarmor.png</image:loc>
+      <image:title>Body Armor — Failed business by William Vicory</image:title>
+      <image:caption>Marketing material for William Vicory’s failed Body Armor business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/bodyarmour2.png</image:loc>
+      <image:title>Body Armour — Alternate branding by William Vicory</image:title>
+      <image:caption>Alternate logo for William Vicory’s Body Armour business attempt.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/SwankBill.png</image:loc>
+      <image:title>Swank Bill — Logo from failed venture</image:title>
+      <image:caption>“Swank Bill” logo used by William Vicory for a short-lived business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/stolenlogo.png</image:loc>
+      <image:title>Stolen Logo — Evidence of business misconduct</image:title>
+      <image:caption>Logo allegedly copied by William Vicory for use in a failed business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/Mushroom King/mush1.jpg</image:loc>
+      <image:title>Mushroom King — William Vicory’s failed mushroom business (1)</image:title>
+      <image:caption>First image from the Mushroom King business run by William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/Mushroom King/mush2.jpg</image:loc>
+      <image:title>Mushroom King — William Vicory’s failed mushroom business (2)</image:title>
+      <image:caption>Second image from William Vicory’s Mushroom King business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/Mushroom King/mush3.jpg</image:loc>
+      <image:title>Mushroom King — William Vicory’s failed mushroom business (3)</image:title>
+      <image:caption>Third product photo from Mushroom King, William Vicory’s failed venture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/Mushroom King/mush4.png</image:loc>
+      <image:title>Mushroom King — William Vicory’s failed mushroom business (4)</image:title>
+      <image:caption>Fourth and final image from William Vicory’s Mushroom King business.</image:caption>
+    </image:image>
+    <!-- Neglect to Family -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/rotting_chimey.png</image:loc>
+      <image:title>Neglected chimney — Evidence of family neglect by William Vicory</image:title>
+      <image:caption>Photo of the rotting chimney at the Vicory family home, highlighting neglect.</image:caption>
+    </image:image>
+    <!-- Porn Addiction -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/maryOMO.png</image:loc>
+      <image:title>Mary OMO — Porn addiction evidence (William Vicory)</image:title>
+      <image:caption>Screenshot of Mary OMO as part of William Vicory’s online porn addiction documentation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/1.jpg</image:loc>
+      <image:title>Porn account evidence 1 — William Vicory</image:title>
+      <image:caption>First of several screenshots showing William Vicory’s use of pornographic accounts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/2.jpg</image:loc>
+      <image:title>Porn account evidence 2 — William Vicory</image:title>
+      <image:caption>Second screenshot of pornographic account activity linked to William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/3.jpg</image:loc>
+      <image:title>Porn account evidence 3 — William Vicory</image:title>
+      <image:caption>Third image documenting William Vicory’s porn account usage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/4.jpg</image:loc>
+      <image:title>Porn account evidence 4 — William Vicory</image:title>
+      <image:caption>Fourth image from William Vicory’s porn account gallery.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/5.jpg</image:loc>
+      <image:title>Porn account evidence 5 — William Vicory</image:title>
+      <image:caption>Fifth screenshot showing William Vicory’s porn account subscriptions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/6.jpg</image:loc>
+      <image:title>Porn account evidence 6 — William Vicory</image:title>
+      <image:caption>Sixth image documenting William Vicory’s engagement with pornographic content.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/7.jpg</image:loc>
+      <image:title>Porn account evidence 7 — William Vicory</image:title>
+      <image:caption>Seventh screenshot from William Vicory’s porn account activity.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/8.jpg</image:loc>
+      <image:title>Porn account evidence 8 — William Vicory</image:title>
+      <image:caption>Eighth image of William Vicory’s pornographic account usage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/countless accounts/9.jpg</image:loc>
+      <image:title>Porn account evidence 9 — William Vicory</image:title>
+      <image:caption>Ninth and final screenshot of William Vicory’s porn account activity.</image:caption>
+    </image:image>
+    <!-- Porn Addiction gallery (horndog folder images) -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/1.jpg</image:loc>
+      <image:title>Porn gallery evidence 1 — William Vicory</image:title>
+      <image:caption>First image from the “horndog” folder, evidencing William Vicory’s porn addiction.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/2.jpg</image:loc>
+      <image:title>Porn gallery evidence 2 — William Vicory</image:title>
+      <image:caption>Second explicit image from William Vicory’s “horndog” folder.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/3.jpg</image:loc>
+      <image:title>Porn gallery evidence 3 — William Vicory</image:title>
+      <image:caption>Third explicit image from “horndog” folder tied to William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/4.jpg</image:loc>
+      <image:title>Porn gallery evidence 4 — William Vicory</image:title>
+      <image:caption>Fourth explicit image from William Vicory’s “horndog” porn gallery.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/5.jpg</image:loc>
+      <image:title>Porn gallery evidence 5 — William Vicory</image:title>
+      <image:caption>Fifth explicit image from the “horndog” folder linked to William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/6.jpg</image:loc>
+      <image:title>Porn gallery evidence 6 — William Vicory</image:title>
+      <image:caption>Sixth explicit image from William Vicory’s “horndog” folder.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/7.jpg</image:loc>
+      <image:title>Porn gallery evidence 7 — William Vicory</image:title>
+      <image:caption>Seventh explicit image from the “horndog” porn gallery.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/8.jpg</image:loc>
+      <image:title>Porn gallery evidence 8 — William Vicory</image:title>
+      <image:caption>Eighth explicit image from William Vicory’s “horndog” folder.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/9.jpg</image:loc>
+      <image:title>Porn gallery evidence 9 — William Vicory</image:title>
+      <image:caption>Ninth explicit image from the “horndog” folder.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/horndog/10.jpg</image:loc>
+      <image:title>Porn gallery evidence 10 — William Vicory</image:title>
+      <image:caption>Tenth and final explicit image from William Vicory’s “horndog” porn gallery.</image:caption>
+    </image:image>
+    <!-- BDSM contract -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/bdsm/photo_2025-08-07_15-42-47.jpg</image:loc>
+      <image:title>BDSM contract — William Vicory (1)</image:title>
+      <image:caption>First image of BDSM contract signed by William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/bdsm/photo_2025-08-07_15-42-50.jpg</image:loc>
+      <image:title>BDSM contract — William Vicory (2)</image:title>
+      <image:caption>Second image of BDSM contract involving William Vicory.</image:caption>
+    </image:image>
+    <!-- Camera lease receipts -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/camera_receipt1.jpg</image:loc>
+      <image:title>Camera lease receipt 1 — William Vicory</image:title>
+      <image:caption>First camera lease receipt document linked to William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/camera_receipt2.jpg</image:loc>
+      <image:title>Camera lease receipt 2 — William Vicory</image:title>
+      <image:caption>Second camera lease receipt showing William Vicory’s financial dealings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/camera_receipt3.jpg</image:loc>
+      <image:title>Camera lease receipt 3 — William Vicory</image:title>
+      <image:caption>Third camera lease receipt associated with William Vicory.</image:caption>
+    </image:image>
+    <!-- Truck financing -->
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/truck1.jpg</image:loc>
+      <image:title>Truck financing document 1 — William Vicory</image:title>
+      <image:caption>First image of truck financing paperwork for William Vicory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://williamvicory.com/assets/pics/truck2.jpg</image:loc>
+      <image:title>Truck financing document 2 — William Vicory</image:title>
+      <image:caption>Second image of truck financing paperwork related to William Vicory.</image:caption>
+    </image:image>
   </url>
 </urlset>
